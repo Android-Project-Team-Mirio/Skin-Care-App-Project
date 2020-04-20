@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/palePink"
+    tools:context=".Products.ProductItemActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="41dp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView3"
+        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="125dp"
+        android:text="Product Name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/saveWishlist"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="136dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:drawableEnd="@drawable/ic_wishlist_alt"
+        android:text="Wishlist"
+        android:textSize="8pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="wrap_content"
+        android:layout_height="553dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="286dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginBottom="39dp"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tristique risus nec feugiat in fermentum posuere urna. Posuere lorem ipsum dolor sit amet consectetur adipiscing elit. Orci a scelerisque purus semper. Urna id volutpat lacus laoreet non curabitur gravida. Dui accumsan sit amet nulla. Sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra. Urna condimentum mattis pellentesque id nibh. Lorem ipsum dolor sit amet consectetur adipiscing elit ut. Nunc sed id semper risus in hendrerit. Eget velit aliquet sagittis id consectetur purus ut faucibus.
+    Amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar. Sed faucibus turpis in eu mi. Enim nunc faucibus a pellentesque sit amet. Praesent tristique magna sit amet purus gravida quis. Viverra tellus in hac habitasse platea. Lorem sed risus ultricies tristique nulla aliquet enim tortor. Cras fermentum odio eu feugiat pretium nibh. Nunc id cursus metus aliquam eleifend mi in nulla posuere. Felis donec et odio pellentesque diam volutpat commodo sed egestas. Eros donec ac odio tempor orci dapibus ultrices in iaculis. Purus in massa tempor nec feugiat nisl pretium fusce. Fames ac turpis egestas integer eget aliquet nibh praesent tristique.
+    Egestas fringilla phasellus faucibus scelerisque. Enim lobortis scelerisque fermentum dui. Egestas pretium aenean pharetra magna. Non consectetur a erat nam at. Netus et malesuada fames ac turpis egestas. Arcu dictum varius duis at consectetur lorem donec massa sapien. Aliquam vestibulum morbi blandit cursus risus at ultrices mi tempus. Ligula ullamcorper malesuada proin libero. Blandit libero volutpat sed cras ornare arcu dui. Nibh nisl condimentum id venenatis a condimentum vitae sapien pellentesque. Et sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque. Commodo odio aenean sed adipiscing diam donec adipiscing tristique risus. Eget duis at tellus at urna condimentum. Massa eget egestas purus viverra accumsan in nisl nisi scelerisque."
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

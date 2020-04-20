@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single" >
+
+        <group android:id="@+id/grp1" android:checkableBehavior="single">
+            <item android:id="@+id/nav_profile"
+                android:title="Profile"
+                android:icon="@drawable/ic_profile"/>
+        </group>
+
+
+            <item android:title="Skin Care">
+                <menu>
+                    <group android:id="@+id/grp2" android:checkableBehavior="single" >
+                    <item android:id="@+id/nav_products_skin"
+                        android:title="Products"
+                        android:icon="@drawable/ic_skincare_products"/>
+                    <item android:id="@+id/nav_routine"
+                        android:title="Skin care routine"
+                        android:icon="@drawable/ic_routine_alt"/>
+                    <item android:id="@+id/nav_log"
+                        android:title="Log"
+                        android:icon="@drawable/ic_log"/>
+                    </group>
+                </menu>
+            </item>
+
+
+
+            <item android:title="Make Up">
+                <menu>
+                    <group android:id="@+id/grp3" android:checkableBehavior="single">
+                    <item android:id="@+id/nav_products_makeup"
+                        android:title="Products"
+                        android:icon="@mipmap/ic_makeup_prods"/>
+                    </group>
+                </menu>
+            </item>
+
+        <group android:id="@+id/grp4" android:checkableBehavior="single">
+                <item android:id="@+id/nav_wishlist"
+                    android:title="Wishlist"
+                    android:icon="@drawable/ic_wishlist_alt"/>
+
+                <item android:id="@+id/nav_info"
+                    android:title="Products Information"
+                    android:icon="@drawable/ic_info_alt"/>
+        </group>
+
+    </group>
+</menu>

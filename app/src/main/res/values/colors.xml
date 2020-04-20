@@ -3,4 +3,11 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="pastelPink">#ffd1dc</color>
+    <color name="paleViolet">#ddd1ff</color>
+    <color name="paleBlue">#d1dcff</color>
+    <color name="palePink">#ffebef</color>
+    <color name="pinkPale">#ffd2db</color>
+    <color name="linkBlue">#4d7aff</color>
+    <color name="darkGray">#66696969</color>
 </resources>

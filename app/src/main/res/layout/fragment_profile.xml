@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pastelPink"
+    tools:context=".ProfileQuiz.ProfileFragment">
+
+    <EditText
+        android:id="@+id/profileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#F68787"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/profileName"
+        app:layout_constraintBottom_toBottomOf="@+id/profilePic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/profilePic"
+        app:layout_constraintTop_toBottomOf="@+id/profileTitle" />
+
+    <EditText
+        android:id="@+id/profileSkinType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#F68787"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/profileSkinType"
+        app:layout_constraintBottom_toBottomOf="@+id/profilePic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/profilePic"
+        app:layout_constraintTop_toBottomOf="@+id/profileName" />
+
+    <TextView
+        android:id="@+id/tipsAndTricks"
+        android:layout_width="177dp"
+        android:layout_height="30dp"
+        android:text="Tips And Tricks!"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FF7070"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/profileTitle"
+        android:layout_width="147dp"
+        android:layout_height="39dp"
+
+        android:text="Profile "
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#FF7070"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.050000012" />
+
+    <ImageView
+        android:id="@+id/profilePic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/profile_pic_logo"
+        app:layout_constraintBottom_toTopOf="@+id/tipsAndTricks"
+        app:layout_constraintEnd_toStartOf="@+id/profileName"
+        app:layout_constraintHorizontal_bias="0.403"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.497"
+        tools:srcCompat="@tools:sample/avatars[1]" />
+
+    <TextView
+        android:id="@+id/tipsAndTricks1"
+        android:layout_width="320dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/border"
+        android:text="@string/tip1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tipsAndTricks" />
+
+    <TextView
+        android:id="@+id/tipsAndTricks2"
+        android:layout_width="319dp"
+        android:layout_height="63dp"
+        android:background="@drawable/border"
+        android:text="@string/tip2"
+        app:layout_constraintBottom_toTopOf="@+id/tipsAndTricks3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tipsAndTricks1" />
+
+    <TextView
+        android:id="@+id/tipsAndTricks3"
+        android:layout_width="318dp"
+        android:layout_height="59dp"
+        android:background="@drawable/border"
+
+        android:text="@string/tip3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tipsAndTricks1" />
+
+    <Button
+        android:id="@+id/goToQuizBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Take Skin Quiz"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tipsAndTricks3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
